@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's Sarthak's</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #0c424e;
+            color: rgb(255, 255, 255);
+            font-family: 'Poppins', sans-serif;
+
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: #097087;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul a:hover {
+            color: #00d0ff;
+            font-size: 1.08 rem;
+        }
+
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0px;
+        }
+
+        .firstsection>div {
+            width: 40%;
+        }
+
+        .rightsection img {
+            width: 90%;
+            margin-top: 10px;
+            background-color: none;
+        }
+
+        .leftsection {
+            font-size: 2rem;
+            margin-top: 120px;
+        }
+
+        #element {
+            /* color: rgb(104, 129, 241); */
+            -webkit-animation: glow 1s ease-in-out infinite alternate;
+            -moz-animation: glow 1s ease-in-out infinite alternate;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60049, 0 0 40px #e60049, 0 0 50px #e60049, 0 0 60px #e60049, 0 0 70px #e60049;
+            }
+
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4d6b, 0 0 50px #ff4d6b, 0 0 60px #ff4d6b, 0 0 70px #ff4d6b, 0 0 80px #ff4d6b;
+            }
+        }
+
+        .iu {
+            color: #00d5ff;
+        }
+
+        #line {
+            margin-top: 40px;
+            width: 90%;
+            margin-left: 60px;
+            height: 4px;
+            background: #a1dde9;
+            border-radius: 3px;
+            border: 0px;
+
+        }
+
+        .aboutme {
+            width: 94%;
+            /* border: red 2px solid; */
+            margin: auto;
+
+
+        }
+
+        .heading1 {
+            font-size: 2rem;
+            padding: 20px;
+            margin: 30px 10px;
+        }
+
+        #mainbox {
+            display: flex;
+            margin: 15px;
+        }
+
+        #mainbox :hover {
+            background-color: #007e8a;
+        }
+
+
+
+        .box1 {
+            /* border: red 2px solid; */
+            /* margin: 20px ; */
+            width: 30%;
+            background-color: #285f6c;
+            border-radius: 13px;
+            /* display: inline-block; */
+
+        }
+
+
+        .box2 {
+            /* border: red 2px solid; */
+            /* margin: 20px ; */
+            width: 30%;
+            margin: auto;
+            background-color: #285f6c;
+            border-radius: 13px;
+            display: inline-block;
+        }
+
+        .box3 {
+            /* border: red 2px solid; */
+            /* margin: 20px ; */
+            width: 30%;
+            background-color: #285f6c;
+            border-radius: 13px;
+            display: inline-block;
+            /* float: right; */
+        }
+
+        .box1 img {
+            overflow: auto;
+            height: 40px;
+            width: 40px;
+            padding: 10px;
+            float: left;
+        }
+
+        .box1 div {
+            display: inline-block;
+            margin-left: 20px;
+            width: auto;
+            text-align: justify;
+            margin-top: 15px;
+            margin-bottom: 4px;
+            margin-left: 3px;
+            font-size: 1.2rem;
+
+
+            /* background-color: #e60049; */
+
+        }
+
+        #para {
+
+            padding: 20px;
+            font-size: 0.6rem;
+            color: rgb(196, 195, 195);
+        }
+
+        .box2 img {
+
+            overflow: auto;
+            height: 40px;
+            width: 30px;
+            padding: 10px;
+            float: left;
+        }
+
+        .box2 div {
+            display: inline-block;
+            margin-left: 20px;
+            width: auto;
+            text-align: justify;
+            margin-top: 13px;
+            margin-bottom: 4px;
+            margin-left: 3px;
+            font-size: 1.2rem;
+
+            /* background-color: #e60049; */
+
+        }
+
+        #entre {
+            padding: 20px;
+            font-size: 0.6rem;
+            color: rgb(196, 195, 195);
+        }
+
+        .box3 img {
+            overflow: auto;
+            height: 40px;
+            width: 40px;
+            padding: 10px;
+            float: left;
+        }
+
+        .box3 div {
+            display: inline-block;
+            margin-left: 20px;
+            width: auto;
+            text-align: justify;
+            margin-top: 15px;
+            margin-bottom: 4px;
+            margin-left: 3px;
+            font-size: 1.2rem;
+
+            /* background-color: #e60049; */
+
+        }
+
+        #skill {
+            padding: 20px;
+            font-size: 0.6rem;
+            color: rgb(196, 195, 195);
+        }
+
+        .work {
+            /* border: solid red 2px; */
+
+            width: 94%;
+            margin: auto;
+        }
+
+        .heading2 {
+            /* border: solid red 2px; */
+            margin-top: 60px;
+            font-size: 2rem;
+            padding: 10px;
+            animation: 2s anim-lineUp ease-out;
+        }
+
+        /* @keyframes anim-lineUp {
+            0% {
+                opacity: 0;
+                transform: translateY(80%);
+            }
+
+            20% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        } */
+
+        #work1 {
+            /* border: solid red 2px; */
+            margin: 10px;
+            background-color: #007e8a;
+            border-radius: 9px;
+        }
+
+        #work2 {
+            /* border: solid red 2px; */
+            margin: 10px;
+            background-color: #007e8a;
+            border-radius: 9px;
+        }
+
+        #work3 {
+            /* border: solid red 2px; */
+            margin: 10px;
+            background-color: #007e8a;
+            border-radius: 9px;
+        }
+
+        #work4 {
+            /* border: solid red 2px; */
+            margin: 10px;
+            background-color: #007e8a;
+            border-radius: 9px;
+        }
+
+        .fourbox {
+            display: flex;
+            /* margin: 20px; */
+            margin-top: 10px;
+        }
+
+        .fourbox p {
+            font-size: 0.6rem;
+            padding: 20px;
+            color: rgb(196, 195, 195);
+        }
+
+        .mar {
+            /* padding: 90px; */
+            padding-left: 20px;
+            font-size: 1.2rem;
+            padding-top: 10px;
+
+        }
+
+        .social {
+            margin: 10px;
+        }
+
+        .social img {
+
+            height: 25px;
+            width: 25px;
+            margin: 6px;
+        }
+
+        .contact {
+            /* border: 2px solid red; */
+            width: 90%;
+            margin: auto;
+
+        }
+
+        .boss {
+            font-size: 2rem;
+            margin-top: 50px;
+        }
+
+        #mail {
+            height: 20px;
+            width: 25px;
+            margin-right: 10px;
+        }
+
+        #call {
+            height: 25px;
+            width: 25px;
+            margin-right: 10px;
+        }
+
+        .rightcon p {
+            margin: 20px;
+            padding: 0;
+        }
+
+        .foot {
+            background-color:#242424;
+            margin-top: 70px;
+            height: 20px;
+            padding: 15px;
+
+        }
+
+        .ftext {
+           width: 100%;
+           text-align: center;
+           font-size: 0.6rem;
+           /* margin-top: 20px; */
+           padding: 4px 0px;
+        }
+
+        
+    </style>
+
+
+<body>
+    <header>
+        <nav>
+
+            <div class="left"> It's sarthak</div>
+            <div class="right">
+                <ul>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <li>Home</li>
+                    </a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <li>About Me</li>
+                    </a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <li>Work</li>
+                    </a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <li>Contact Me</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Welcome,<br>
+                <div>I'm <Spam class="iu">S</Spam>a<spam class="iu">r</spam>thak</div>
+                <span>I'm a </span>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="[removal.ai]_tmp-64ae383e7b103.png" alt="404 error">
+            </div>
+        </section>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['Entrepreneur', 'Developer', 'Marketer', 'Business Developer'],
+                typeSpeed: 40,
+            });
+
+
+        </script>
+    </main>
+    <hr id="line">
+
+    <div class="aboutme">
+        <div class="heading1">
+            About me
+        </div>
+        <div id="mainbox">
+            <div class="box1"><img src="education-removebg-preview.png" alt="">
+                <div>Education</div>
+                <div>
+                    <p id="para">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae eum eos, dolor ea rerum ex,
+                        nihil dignissimos in quaerat rem vitae velit nostrum. Blanditiis praesentium, vitae itaque
+                        adipisci culpa consectetur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
+                        sapiente culpa exercitationem, soluta deserunt officiis rerum eligendi! Labore beatae minima
+                        perferendis, molestiae aut voluptate fugit eum! Reprehenderit omnis soluta magni.
+                    </p>
+                </div>
+            </div>
+            <div class="box2"><img src="entre-removebg-preview.png" alt="">
+                <div>Entrepreneur</div>
+                <div>
+                    <p id="entre">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis similique fuga vero
+                        laudantium cumque hic debitis unde. Dolores magni placeat officia, officiis quibusdam cupiditate
+                        quo ipsa cum aut sapiente sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Temporibus molestiae alias officia necessitatibus veritatis suscipit magnam consectetur quam
+                        eaque explicabo vero, est sequi animi nemo ab provident, cupiditate distinctio excepturi.
+                    </p>
+                </div>
+            </div>
+            <div class="box3"><img src="skills-removebg-preview.png" alt="">
+                <div>Skills</div>
+                <div>
+                    <p id="skill">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis totam quia ea expedita dolor,
+                        sit quos ipsa soluta molestiae quas et harum beatae ratione unde fugit amet odit voluptatibus
+                        optio! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea eligendi id labore, in amet
+                        natus nemo blanditiis similique quas fugit iste dolorum voluptatum consequatur veritatis
+                        perspiciatis sequi expedita quidem nihil?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <div class="work">
+        <div class="heading2">
+            Work
+        </div>
+        <div class="fourbox">
+
+
+            <div id="work1">
+                <div class="mar">Business</div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, perferendis beatae adipisci voluptas
+                    officia
+                    dolores eligendi possimus eos debitis laudantium labore officiis quas recusandae et saepe facere
+                    veritatis
+                    tempore illum, fuga maiores consequuntur explicabo. Debitis consectetur similique minima ipsum
+                    quasi?
+                </p>
+            </div>
+
+            <div id="work2">
+                <div class="mar">Marketer</div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus facilis ad consectetur est
+                    quod.
+                    Officiis fugit doloremque aliquid dicta aliquam dolore distinctio. Optio nihil consectetur earum
+                    cumque
+                    sit
+                    vel nobis quo porro. Excepturi eveniet minima est rem velit laudantium accusantium.</p>
+            </div>
+
+            <div id="work3">
+                <div class="mar">Graphics Designer</div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius optio unde enim exercitationem nostrum
+                    labore ad modi, blanditiis natus ducimus incidunt consequuntur ex earum culpa minima est amet soluta
+                    voluptas placeat quidem laboriosam! Corporis dolore laborum numquam dolorum maiores eius!</p>
+            </div>
+            <div id="work4">
+                <div class="mar">Web Developer</div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi amet in esse, quibusdam numquam
+                    placeat
+                    repudiandae eum neque error possimus dolore iste quos temporibus provident at veniam iusto hic!
+                    Nobis
+                    fuga inventore ex exercitationem quibusdam reprehenderit autem, laudantium illo id.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="boss">Contact me</div>
+        <div class="heading3">
+            <div class="rightcon">
+                <p><img id="mail" src="email-removebg-preview.png" alt="">roysarthak16@gmail.com</p>
+                <p><img id="call" src="call-removebg-preview (1).png" alt="">6295623945</p>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/sarthak-roy-1b290822a" target="_blank"><img src="linkedin.png"
+                            alt=""></a>
+                    <a href="https://instagram.com/i____sarthakroy?igshid=MzRlODBiNWFlZA==" target="_blank"><img
+                            src="instagram.png" alt=""></a>
+                    <a href="https://www.threads.net/@i____sarthakroy" target="_blank"><img
+                            src="download-removebg-preview (1).png" alt=""></a>
+                    <a href="https://www.facebook.com/sarthak.roy.773124?mibextid=ZbWKwL" target="_blank"><img
+                            src="facebook.png" alt=""></a>
+                    <a href="https://wa.link/2zjlxt" target="_blank"><img src="whatsapp.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot">
+        <footer>
+            <div class="ftext">
+                © Copyright Sarthak Roy 2023
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>
